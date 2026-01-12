@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.site-header {
+    background: #111;
+    padding: 16px 0;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.logo span {
+    color: #e63946;
+}
+
+.nav a {
+    color: #ddd;
+    margin-left: 16px;
+    font-weight: 600;
+}
+
+.nav a:hover {
+    color: #fff;
+}
+
+.featured {
+    background: #fff;
+    padding: 24px 0;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 24px;
+}
+
+.featured img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.featured-text h2 {
+    margin: 8px 0;
+    font-size: 1.8rem;
+}
+
+.featured-text p {
+    color: #555;
+}
+
+.read-more {
+    color: #e63946;
+    font-weight: bold;
+}
+
+.tag {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.breaking { background: #e63946; }
+.city { background: #457b9d; }
+.world { background: #1d3557; }
+.tech { background: #2a9d8f; }
+
+.latest-news {
+    padding: 32px 0;
+}
+
+.section-title {
+    border-left: 4px solid #e63946;
+    padding-left: 8px;
+    margin-bottom: 20px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-card {
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 16px;
+}
+
+.news-content h3 {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+.news-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+.news-content a {
+    color: #e63946;
+    font-weight: 600;
+}
+
+.site-footer {
+    background: #111;
+    color: #ccc;
+    padding: 16px 0;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #ccc;
+    margin-left: 16px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-flex {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
